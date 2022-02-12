@@ -1,0 +1,41 @@
+body {
+  background: linear-gradient(170deg, rgb(169 168 191 / 40%) 0%, rgb(223, 248, 235) 40%, rgb(193, 247, 154, 0.4) 100%);
+  background-image: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ }
+
+
+.landing-container {
+  height: calc(100vh);
+  padding: 0 0 10rem 0;
+}
+
+.landing-right-box .card-wrapper {
+  right: 6.75rem;
+  top: 8rem;
+}
+
+/* Colors */
+.landing-title .text-black, .text-black {
+  color: var(--dark);
+}
+
+
+/* navigation */
+
+.form-input:focus {
+  box-shadow: 0 0 0 0 rgb(13 110 253 / 0%);
+}
+
+
+/* Transform  */
+
+.-rotate-10 {
+  transform: rotate(-10deg);
+}
+
+.transform-origin-bottom {
+  transform-origin: bottom;
+}
