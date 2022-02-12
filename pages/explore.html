@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="https://livejs.com/live.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon"
+      href="data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 101 101' xml:space='preserve' x='100' y='100' fill='%23000' stroke-linejoin='round' stroke-miterlimit='1'%3E%3Cpath d='M34.675 92.229V84.59a2.984 2.984 0 0 0-2.984-2.984h-4.655v-1.671h9.311v12.294a2.984 2.984 0 0 0 2.984 2.984h7.639a2.984 2.984 0 0 0 2.984-2.984V69.311a2.984 2.984 0 0 0-2.984-2.984H34.675v-9.31h1.672v4.655a2.984 2.984 0 0 0 2.984 2.984h7.639a2.984 2.984 0 0 0 2.984-2.984V38.754a2.984 2.984 0 0 0-2.984-2.984h-7.639a2.984 2.984 0 0 0-2.984 2.984v4.656H24.052a2.984 2.984 0 0 0-2.984 2.984v19.933h-1.671V41.883l12.329-.145a2.983 2.983 0 0 0 2.949-2.984V26.46h1.672v4.655a2.984 2.984 0 0 0 2.984 2.984h7.639a2.984 2.984 0 0 0 2.984-2.984V8.197a2.984 2.984 0 0 0-2.984-2.984h-7.639a2.984 2.984 0 0 0-2.984 2.984v4.655H24.052a2.985 2.985 0 0 0-2.984 2.985v12.294h-4.655a2.985 2.985 0 0 0-2.984 2.984 2.985 2.985 0 0 0 2.984 2.984h7.639a2.984 2.984 0 0 0 2.984-2.984V18.821h12.295a2.984 2.984 0 0 0 2.984-2.984v-4.656h1.671v16.95h-1.671v-4.655a2.984 2.984 0 0 0-2.984-2.984h-7.64a2.984 2.984 0 0 0-2.984 2.984v12.329l-12.329.144a2.985 2.985 0 0 0-2.949 2.984v30.378a2.984 2.984 0 0 0 2.984 2.984h7.639a2.984 2.984 0 0 0 2.984-2.984V49.378h12.295a2.984 2.984 0 0 0 2.984-2.984v-4.656h1.671v16.95h-1.671v-4.655a2.984 2.984 0 0 0-2.984-2.984h-7.64a2.984 2.984 0 0 0-2.984 2.984v15.278a2.984 2.984 0 0 0 2.984 2.984h12.295v16.95h-1.671V76.951a2.984 2.984 0 0 0-2.984-2.984H24.052a2.984 2.984 0 0 0-2.984 2.984v7.639a2.984 2.984 0 0 0 2.984 2.984h4.655v4.655a2.985 2.985 0 0 0 2.984 2.984 2.985 2.985 0 0 0 2.984-2.984ZM72.872 92.229v-4.655h4.655a2.984 2.984 0 0 0 2.984-2.984v-7.639a2.984 2.984 0 0 0-2.984-2.984H62.248a2.984 2.984 0 0 0-2.984 2.984v12.294h-1.671v-16.95h12.295a2.984 2.984 0 0 0 2.984-2.984V54.033a2.984 2.984 0 0 0-2.984-2.984h-7.64a2.984 2.984 0 0 0-2.984 2.984v4.655h-1.671v-16.95h1.671v4.656a2.984 2.984 0 0 0 2.984 2.984h12.295v19.933a2.984 2.984 0 0 0 2.984 2.984h7.639a2.984 2.984 0 0 0 2.984-2.984V38.933a2.985 2.985 0 0 0-2.949-2.984l-12.329-.144V23.476a2.984 2.984 0 0 0-2.984-2.984h-7.64a2.984 2.984 0 0 0-2.984 2.984v4.655h-1.671v-16.95h1.671v4.656a2.984 2.984 0 0 0 2.984 2.984h12.295v12.294a2.984 2.984 0 0 0 2.984 2.984h7.639a2.985 2.985 0 0 0 2.984-2.984 2.985 2.985 0 0 0-2.984-2.984h-4.655V15.837a2.985 2.985 0 0 0-2.984-2.985H65.233V8.197a2.984 2.984 0 0 0-2.985-2.984h-7.639a2.984 2.984 0 0 0-2.984 2.984v22.918a2.984 2.984 0 0 0 2.984 2.984h7.639a2.984 2.984 0 0 0 2.985-2.984V26.46h1.671v12.294a2.983 2.983 0 0 0 2.949 2.984l12.329.145v24.444h-1.671V46.394a2.984 2.984 0 0 0-2.984-2.984H65.233v-4.656a2.984 2.984 0 0 0-2.985-2.984h-7.639a2.984 2.984 0 0 0-2.984 2.984v22.918a2.984 2.984 0 0 0 2.984 2.984h7.639a2.984 2.984 0 0 0 2.985-2.984v-4.655h1.671v9.31H54.609a2.984 2.984 0 0 0-2.984 2.984v22.918a2.984 2.984 0 0 0 2.984 2.984h7.639a2.984 2.984 0 0 0 2.985-2.984V79.935h9.31v1.671h-4.655a2.984 2.984 0 0 0-2.984 2.984v7.639a2.985 2.985 0 0 0 2.984 2.984 2.985 2.985 0 0 0 2.984-2.984Z'/%3E%3C/svg%3E%0A">
+  <title>ÀI kärt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7b62ea7364.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://featherui.netlify.app/css/main.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="/js/_header/header.js" type="text/javascript" defer></script>
+  <script src="/js/_footer/footer.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+  <header-component></header-component>
+  <div class="page-title text-center m-16">
+    <h1>Virtual World</h1>
+  </div>
+  <section>
+    <div class="product-list-container grid grid-cols-3 grid-gap-8">
+      <div>
+
+        <div>
+          <div class="mb-8">
+            <button class="btn btn-danger transparent w-full"><i class="fas fa-sliders-h"></i> Clear all filters</button>
+          </div>
+        </div>
+
+        <div class="feather">
+          <div class="mb-8 p-8">
+            <h5 class="side-nav-title">Ratings</h5>
+            <div class="range-wrap" style="--min: 0; --max: 100; --val: 50">
+              <input id="r" type="range" />
+            </div>
+          </div>
+        </div>
+
+        <div class="feather">
+          <div class="mb-8 p-8">
+            <h5 class="side-nav-title">Categories</h5>
+            <div class="input-group flex flex-column flex-gap-1 mt-8">
+              <div class="checkbox checkbox-primary">
+                <input type="checkbox" name="checkbox1" id="checkbox1">
+                <label for="checkbox1">Architecture</label>
+              </div>
+            </div>
+            <div class="input-group flex flex-column flex-gap-1 mt-8">
+              <div class="checkbox checkbox-primary">
+                <input type="checkbox" name="checkbox1" id="checkbox1">
+                <label for="checkbox1">Art</label>
+              </div>
+            </div>
+            <div class="input-group flex flex-column flex-gap-1 mt-8">
+              <div class="checkbox checkbox-primary">
+                <input type="checkbox" name="checkbox1" id="checkbox1">
+                <label for="checkbox1">Virtual World</label>
+              </div>
+            </div>
+            <div class="input-group flex flex-column flex-gap-1 mt-8">
+              <div class="checkbox checkbox-primary">
+                <input type="checkbox" name="checkbox1" id="checkbox1">
+                <label for="checkbox1">Black and white world</label>
+              </div>
+            </div>
+            <div class="input-group flex flex-column flex-gap-1 mt-8">
+              <div class="checkbox checkbox-primary">
+                <input type="checkbox" name="checkbox1" id="checkbox1">
+                <label for="checkbox1">Demons</label>
+              </div>
+            </div>
+            <div class="input-group flex flex-column flex-gap-1 mt-8">
+              <div class="checkbox checkbox-primary">
+                <input type="checkbox" name="checkbox1" id="checkbox1">
+                <label for="checkbox1">Black holes</label>
+              </div>
+            </div>
+            <div class="input-group flex flex-column flex-gap-1 mt-8">
+              <div class="checkbox checkbox-primary">
+                <input type="checkbox" name="checkbox1" id="checkbox1">
+                <label for="checkbox1">3D</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feather">
+          <div class="mb-8 p-8">
+            <h5 class="side-nav-title">Price</h5>
+            <div class="input-group flex flex-column flex-gap-1 mt-8">
+              <div class="radio radio-primary">
+                <input type="radio" name="radio1" id="radio1" value="option1" checked>
+                <label for="radio1">
+                  <span>High to low</span>
+                </label>
+              </div>
+              <div class="radio radio-primary">
+                <input type="radio" name="radio1" id="radio2" value="option2">
+                <label for="radio2">
+                  <span>Low to high</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap flex-gap-2">
+        <div class="card position-relative">
+          <span
+          class="text-white px-2 py-2 badge badge-left-top bg-orange px-4 py-2 text-2xl position-absolute">Few
+          left</span>
+          <div class="p-8">
+            <img src="/assets/images/image-12.jpeg" alt="">
+          </div>
+          <div class="flex flex-items-center flex-justify-between px-8 mb-4">
+            <div class="flex flex-gap-1 flex-items-center">
+              <h5 class="strike-out m-0">$499</h5>
+              <h3 class="m-0">$299</h3>
+            </div>
+            <div>
+              <span class="text-3xl"><i class="far fa-heart"></i></span>
+            </div>
+          </div>
+          <div class="px-8">
+            <h4>Nike Flow 2020 iSPA SE</h4>
+            <p>Shoes</p>
+          </div>
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-1 flex-justify-between">
+              <a class="btn btn-success flex flex-items-center"
+                href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank" class="btn">
+                <i class="fas fa-shopping-cart"></i> Add to cart</a>
+              <a class="btn btn-primary flex flex-items-center"
+                href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank" class="btn">
+                <i class="fas fa-shopping-cart"></i> Buy now</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-17.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-1.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <span
+              class="badge badge-right-top bg-primary text-white px-4 py-2 text-xl position-absolute card-badge-right">Deal</span>
+          <div class="p-8">
+            <img src="/assets/images/image-2.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-3.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-4.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-5.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-6.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-7.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-8.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-9.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-10.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-11.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-12.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-13.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-14.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-15.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-16.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card position-relative">
+          <div class="p-8">
+            <img src="/assets/images/image-20.jpeg" alt="">
+          </div>
+          <div class="flex px-8 flex-justify-between flex-items-start">
+            <div>
+              <h5>Instinct Solar</h5>
+              <p>Wearables</p>
+            </div>
+            <div class="flex flex-gap-1 flex-items-center">
+              <h6 class="strike-out m-0">$499</h6>
+              <h4 class="m-0">$299</h4>
+            </div>
+          </div>
+
+          <div class="card-footer p-8">
+            <div class="card-buttons flex flex-gap-2 flex-justify-between flex-items-center">
+              <p class="ratings text-xl"><i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i> <i class="fas fa-star" aria-hidden="true"></i></p>
+              <a class="btn btn-primary flex flex-items-center" href="https://www.nasa.gov/mission_pages/hubble/main/index.html" target="_blank">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i> Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div></div>
+    </div>
+  </section>
+  <section>
+    <div class="py-8">
+      <h3>Browse categories</h3>
+    </div>
+    <div class="flex flex-gap-2">
+      <div class="card flex flex-items-center flex-column  flex-grow-1">
+         <div>
+           <div class="media-responsive rounded-tr-2xl  rounded-tl-2xl overflow-hidden">
+             <img src="/assets/images/image-21.jpg" alt="Responsive Images">
+           </div>
+         </div>
+        <div class="p-8">
+          <h3>Art</h3>
+        </div>
+      </div>
+      <div class="card flex flex-items-center flex-column  flex-grow-1">
+        <div>
+          <div class="media-responsive rounded-tr-2xl  rounded-tl-2xl overflow-hidden">
+            <img src="/assets/images/image-21.jpg" alt="Responsive Images">
+          </div>
+        </div>
+       <div class="p-8">
+         <h3>Collectibles</h3>
+       </div>
+       </div>
+     <div class="card flex flex-items-center flex-column  flex-grow-1">
+      <div>
+        <div class="media-responsive rounded-tr-2xl  rounded-tl-2xl overflow-hidden">
+          <img src="/assets/images/image-21.jpg" alt="Responsive Images">
+        </div>
+      </div>
+     <div class="p-8">
+       <h3>Virtual worlds</h3>
+     </div>
+     </div>
+
+    </div>
+  </section>
+  <footer-component></footer-component>
+
+</body>
+
+</html>
+
