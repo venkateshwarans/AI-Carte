@@ -32,7 +32,7 @@ headerTemplate.innerHTML = `
           </div>
         </div>
         <div class="flex flex-items-center">
-          <a href="#" class="meta-nav-link text-primary font-bold text-xl">
+          <a href="/pages/cart.html" class="meta-nav-link text-primary font-bold text-xl">
             <i class="fas fa-shopping-cart"></i>
             Cart
           </a>
