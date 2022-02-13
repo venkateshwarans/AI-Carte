@@ -19,6 +19,21 @@ body {
   top: 8rem;
 }
 
+
+/* Pages  */
+
+/* Cart management  */
+
+.cart-container .card-image {
+  max-width: 16rem;
+}
+
+.order-total {
+  border-top: 1px solid var(--dark);
+  border-bottom: 1px solid var(--dark);
+}
+
+
 /* Colors */
 .text-primary {
   color: var(--indigo);
@@ -58,4 +73,11 @@ body {
   background: rgba(255,255,255,0.6);
   max-width: 37.5rem;
   margin-bottom: 0;
+}
+
+
+/* Flex */
+
+.flex-grow-2 {
+  flex-grow: 2;
 }
