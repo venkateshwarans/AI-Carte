@@ -38,9 +38,9 @@ headerTemplate.innerHTML = `
           </a>
         </div>
         <div class="flex flex-items-center">
-          <a href="#" class="meta-nav-link text-primary font-bold text-xl">
-            <i class="fas fa-heart"></i>
-            Logout
+          <a href="/pages/signin.html" class="meta-nav-link text-primary font-bold text-xl">
+          <i class="fas fa-lock"></i>
+            Login
           </a>
         </div>
       </div>
