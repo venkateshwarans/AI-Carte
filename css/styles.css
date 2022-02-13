@@ -20,6 +20,10 @@ body {
 }
 
 /* Colors */
+.text-primary {
+  color: var(--indigo);
+}
+
 .landing-title .text-black, .text-black {
   color: var(--dark);
 }
