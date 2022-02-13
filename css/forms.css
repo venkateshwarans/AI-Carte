@@ -1,0 +1,232 @@
+.range-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 5.25em;
+  font: 1em/1 arial, sans-serif;
+}
+
+[type=range] {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  min-height: 1.5em;
+  background: transparent;
+  font: inherit;
+}
+[type=range], [type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+[type=range]::-webkit-slider-runnable-track {
+  box-sizing: border-box;
+  border: none;
+  width: 12.5em;
+  height: 0.25em;
+  background: #ccc;
+}
+[type=range]::-moz-range-track {
+  box-sizing: border-box;
+  border: none;
+  width: 12.5em;
+  height: 0.25em;
+  background: #ccc;
+}
+[type=range]::-ms-track {
+  box-sizing: border-box;
+  border: none;
+  width: 12.5em;
+  height: 0.25em;
+  background: #ccc;
+}
+[type=range]::-webkit-slider-thumb {
+  margin-top: -0.625em;
+  box-sizing: border-box;
+  border: none;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: var(--indigo);
+}
+[type=range]::-moz-range-thumb {
+  box-sizing: border-box;
+  border: none;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: var(--indigo);
+}
+[type=range]::-ms-thumb {
+  margin-top: 0;
+  box-sizing: border-box;
+  border: none;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: var(--indigo);
+}
+[type=range]::-ms-tooltip {
+  display: none;
+}
+[type=range] ~ output {
+  display: none;
+}
+
+
+/* Checkbox   */
+
+.checkbox label {
+  display: inline-block;
+  position: relative;
+  font-weight: 400;
+  padding-left: 2rem;
+  margin-bottom: 0
+}
+
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: -3px;
+  left: -4px;
+  margin-top: 0;
+  margin-left: -1rem;
+  border: none;
+  border-radius: .375rem;
+  background-color: rgba(255,255,255,0.6);
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out
+}
+
+.checkbox label::after {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  left: 0;
+  top: 0;
+  margin-top: 4px;
+  margin-left: -0.7rem;
+  font-size: 9px;
+  color: var(--white)
+}
+
+.checkbox input[type="checkbox"] {
+  opacity: 0
+}
+
+.checkbox input[type="checkbox"]:checked+label::after {
+  font-weight: 900;
+  content: "✓"
+}
+
+.checkbox input[type="checkbox"]:disabled+label {
+  opacity: 0.65
+}
+
+.checkbox input[type="checkbox"]:disabled+label::before {
+  background-color: #a5a5a8;
+  cursor: not-allowed
+}
+
+.checkbox.checkbox-circle label::before {
+  border-radius: 50%
+}
+
+.checkbox.checkbox-inline {
+  margin-top: 0
+}
+
+.checkbox-primary input[type="checkbox"]:checked+label::before {
+  background-color: var(--indigo);
+  border-color:var(--indigo)
+}
+
+.checkbox-primary input[type="checkbox"]:checked+label::after {
+  color: var(--white)
+}
+
+
+/* Radio */
+
+
+.radio label {
+  display: inline-block;
+  position: relative;
+  font-weight: 400;
+  padding-left: 2rem;
+  margin-bottom: 0
+}
+
+.radio label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: -3px;
+  left: 0;
+  margin-left: -1.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.6);
+  margin-top: 0;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+  -webkit-transition: border 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out
+}
+
+.radio label::after {
+  display: inline-block;
+  position: absolute;
+  content: " ";
+  width: 1rem;
+  height: 1rem;
+  left: 6px;
+  top: 3px;
+  margin-left: -1.5rem;
+  border-radius: 50%;
+  -webkit-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+
+.radio input[type="radio"] {
+  opacity: 0
+}
+
+.radio input[type="radio"]:checked+label::after {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1)
+}
+
+.radio input[type="radio"]:disabled+label {
+  opacity: 0.65
+}
+
+.radio input[type="radio"]:disabled+label::before {
+  cursor: not-allowed
+}
+
+.radio.radio-inline {
+  margin-top: 0
+}
+
+.radio-primary input[type="radio"]+label::after {
+  background-color: var(--indigo)
+}
+
+.radio-primary input[type="radio"]:checked+label::before {
+  border-color: var(--indigo)
+}
+
+.radio-primary input[type="radio"]:checked+label::after {
+  background-color: var(--indigo)
+}

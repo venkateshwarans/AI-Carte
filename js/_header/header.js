@@ -17,7 +17,7 @@ headerTemplate.innerHTML = `
       </div>
       <nav class="flex-grow-1">
         <ul class="inline-flex">
-          <li class="text-xl font-bold"><a href="">Explore</a></li>
+          <li class="text-xl font-bold"><a href="/pages/explore.html">Explore</a></li>
           <li class="text-xl font-bold"><a href="">Collections</a></li>
           <li class="text-xl font-bold"><a href="">Creators</a></li>
         </ul>
