@@ -34,6 +34,33 @@ body {
 }
 
 
+/* Product Listing Page */
+
+.product-list-container {
+  grid-template-columns: 24rem 2fr;
+}
+
+.product-list-container.grid .card  {
+  height: auto;
+  background: rgba(255,255,255,0.6);
+  max-width: 37.5rem;
+  margin-bottom: 0;
+}
+
+
+/* WishList page */
+
+.wishlist-container {
+  grid-template-columns: 1fr;
+}
+
+.wishlist-container .card {
+  height: auto;
+  background: rgba(255,255,255,0.6);
+  max-width: 24.5rem;
+  margin-bottom: 0;
+}
+
 /* Colors */
 .text-primary {
   color: var(--indigo);
@@ -62,22 +89,16 @@ body {
 }
 
 
-/* Product Listing Page */
-
-.product-list-container {
-  grid-template-columns: 24rem 2fr;
-}
-
-.product-list-container.grid .card  {
-  height: auto;
-  background: rgba(255,255,255,0.6);
-  max-width: 37.5rem;
-  margin-bottom: 0;
-}
-
 
 /* Flex */
 
 .flex-grow-2 {
   flex-grow: 2;
+}
+
+
+/* Z-index */
+
+.z-index-max {
+  z-index: 9999;
 }
