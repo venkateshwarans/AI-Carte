@@ -102,3 +102,20 @@ body {
 .z-index-max {
   z-index: 9999;
 }
+
+
+/* button */
+
+.btn.disabled.transparent {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.btn.disabled:hover {
+  cursor: default;
+}
+
+.btn.disabled.transparent:hover {
+  background-color: unset;
+  color: var(--dark);
+}
