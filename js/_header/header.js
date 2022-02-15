@@ -32,6 +32,12 @@ headerTemplate.innerHTML = `
           </div>
         </div>
         <div class="flex flex-items-center">
+          <a href="/pages/wishlist.html" class="meta-nav-link text-primary font-bold text-xl">
+          <i class="fas fa-heart"></i>
+            Wishlist
+          </a>
+        </div>
+        <div class="flex flex-items-center">
           <a href="/pages/cart.html" class="meta-nav-link text-primary font-bold text-xl">
             <i class="fas fa-shopping-cart"></i>
             Cart
